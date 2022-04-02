@@ -40,7 +40,10 @@ public function customRegistration(Request $request)
 $request->validate([					
 'name' => 'required',					
 'email' => 'required|email|unique:users',					
-'password' => 'required|min:6',					
+'password' => 'required|min:6',
+'phone' => 'required',	
+'mssv' => 'required',	
+'lop' => 'required',						
 ]);					
 					
 $data = $request->all();					
@@ -54,7 +57,10 @@ public function create(array $data)
 return User::create([					
 'name' => $data['name'],					
 'email' => $data['email'],					
-'password' => Hash::make($data['password'])					
+'password' => Hash::make($data['password']),
+'phone' => $data['phone'],	
+'mssv' => $data['mssv'],	
+'lop' => $data['lop'],				
 ]);					
 }					
 					
