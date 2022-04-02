@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "8ef6acfa4ad4d1c4075b0b9911d53c1d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1683,6 +1683,47 @@
                 }
             ],
             "time": "2022-02-13T18:13:33+00:00"
+        },
+        {
+            "name": "nguyenminhthien263/mypackage",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NguyenMinhThien263/mypackage.git",
+                "reference": "dd7d725be8bcba6bfadb3875beb6b3c4f353ef7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NguyenMinhThien263/mypackage/zipball/dd7d725be8bcba6bfadb3875beb6b3c4f353ef7e",
+                "reference": "dd7d725be8bcba6bfadb3875beb6b3c4f353ef7e",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nguyenminhthien263\\Mypackage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NguyenMinhThien263",
+                    "email": "nguyenminhthien263@gmail.com"
+                }
+            ],
+            "description": "mypackage",
+            "keywords": [
+                "Mypackage"
+            ],
+            "support": {
+                "issues": "https://github.com/NguyenMinhThien263/mypackage/issues",
+                "source": "https://github.com/NguyenMinhThien263/mypackage/tree/main"
+            },
+            "time": "2022-03-26T08:00:04+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7586,7 +7627,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "nguyenminhthien263/mypackage": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
