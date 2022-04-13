@@ -21,7 +21,8 @@ $request->validate([
 'password' => 'required',					
 ]);					
 					
-$credentials = $request->only('email', 'password');					
+$fieldType = filter_var($request->email, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
+$credentials = array($fieldType => $request->email, 'password' => $request->password);				
 if (Auth::attempt($credentials)) {					
 return redirect()->intended('dashboard')					
 ->withSuccess('Signed in');					
